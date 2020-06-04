@@ -9,6 +9,8 @@ const app = express ();
 const db = mongoose.connection;
 require('dotenv').config()
 
+const Plants = require('./models/plants.js');
+
 //___________________
 //Port
 //___________________
@@ -50,14 +52,51 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
 // Routes
 //___________________
-//localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
+//
+
+// new route app.get
+app.get('/myplants/new' , (req, res) => {
+  res.render('new.ejs');
 });
+
+// edit existing plant app.get and app.put
+
+
+
+
+// route to index of plants app.get
+app.get('/myplants', (req, res)=>{
+    // Plants.find({}, (error, allPlants) => {
+      res.render(
+          'index.ejs',
+        // {
+        //     plants: allPlants
+        // });
+    // }
+  );
+});
+
+
+
+// route to show page for each product app.get
+
+
+
+
+// route that adds seed data (you only go to this page once to import it) app.get
+
+
+
+// route that allows you to delete each plant app.delete
+
+
+// add a new product Routes app.post and app.PUT
+
+
 
 //___________________
 //Listener
 //___________________
 app.listen(PORT, () =>
-  console.log( 'Listening on port:', PORT)
+  console.log( 'Grow for meeeee', PORT)
 );
