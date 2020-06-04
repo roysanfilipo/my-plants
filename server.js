@@ -61,7 +61,22 @@ app.get('/myplants/new' , (req, res) => {
 });
 
 // edit existing plant app.get and app.put
+app.get('/myplants/:id/edit', (req, res) => {
+  Plants.findById(req.params.id, (error, updatedPlant) => {
+      res.render(
+        'edit.ejs',
+        {
+          plant: updatedPlant
+        }
+      )
+  });
+});
 
+app.put('/myplants/:id', (req, res) => {
+  Plants.findByIdAndUpdate(req.params.id, req.body, (err, updatedModel) => {
+    res.redirect('/myplants')
+  });
+});
 
 
 
@@ -84,7 +99,16 @@ app.get('/myplants', (req, res)=>{
 
 
 // route to show page for each product app.get
-
+app.get('/myplants/:id', (req, res) => {
+    Plants.findById(req.params.id, (error, foundPlant) => {
+        res.render(
+            'show.ejs',
+            {
+                plant: foundPlant
+            }
+        );
+    });
+});
 
 
 

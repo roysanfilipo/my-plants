@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>my plants | <%=plant.name %></title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <div class="oneplantshow">
+      <h1><%=plant.name %></h1>
+      <div class="oneplantimg">
+        <img src="<%=plant.img%>">
+      </div>
+      <div class="oneplantdays">
+        day(s) you water them: <%=plant.days%>
+      </div>
+      <div class="oneplantdescription">
+        about your plant: <%=plant.description%>
+      </div>
+      <div class="oneplantdate">
+        when you planted them: <%=plant.date%>
+      </div>
+      <div class="navigate">
+        <div class="edit">
+          <a href="/myplants/<%= plant.id %>/edit">update my plant</a>
+        <div>
+        <div class="delete">
+          <form action="/myplants/<%=plant.id %>?_method=DELETE" method="POST">
+            <input type="submit" value="remove my plant"/>
+          </form>
+        </div>
+        <div class="backbutton">
+          <a href="/myplants">back to my plants collection</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

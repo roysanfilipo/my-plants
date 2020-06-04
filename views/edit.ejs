@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>my plants | update <%=plant.name %></title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>edit your <%=plant.name %></h1>
+      <form action="/myplants/<%=plant.id%>?_method=PUT" method="POST">
+          name<br/> <input type="text" name="name" value="<%=plant.name%>" /><br/>
+          image (URL)<br/> <input type="text" name="img" value="<%=plant.img%>" /><br/>
+          day of the week you water them <br/> <input type="text" name="img" value="<%=plant.days%>" /><br/>
+          description<br/> <textarea type="text" name="description"><%=plant.description%></textarea><br/>
+          month/year you planted them<br/> <input type="text" name="date" value="<%=plant.date%>" /><br/>
+          <input type="submit" value="save updates" />
+      </form>
+    </div>
+  </body>
+</html>

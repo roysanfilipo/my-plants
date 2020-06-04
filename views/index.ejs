@@ -7,19 +7,21 @@
   </head>
   <body>
     <div class="container">
-      <h1>my plants.</h1>
+      <h1>my plants</h1>
       <nav>
-        <a href="/myplants/new">add plant.</a>
+        <a href="/myplants/new">add plant</a>
       </nav>
-      <% for(let i = 0; i < plants.length; i++){ %>
       <div class="myplants">
-        <div class="plantimg">
-          <a href="/plant/<%=plants[i].id%>">
-              <img src="<%=plants[i].img%>">
-          </a>
-        </div>
-        <div class="plantname">
-          <%=plants[i].name%>
+      <% for(let i = 0; i < plants.length; i++){ %>
+        <div class="oneplant">
+          <div class="plantsimg">
+            <a href="/myplants/<%=plants[i].id%>">
+                <img src="<%=plants[i].img%>">
+            </a>
+          </div>
+          <div class="plantname">
+            <%=plants[i].name%>
+          </div>
         </div>
         <% } %>
       </div>
