@@ -65,6 +65,10 @@ app.get('/myplants/new' , (req, res) => {
 
 
 // route to index of plants app.get
+app.get('/', (req, res)=>{
+      res.redirect('/myplants',);
+});
+
 app.get('/myplants', (req, res)=>{
     // Plants.find({}, (error, allPlants) => {
       res.render(
