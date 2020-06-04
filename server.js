@@ -74,10 +74,9 @@ app.get('/myplants/:id/edit', (req, res) => {
 
 app.put('/myplants/:id', (req, res) => {
   Plants.findByIdAndUpdate(req.params.id, req.body, (err, updatedModel) => {
-    res.redirect('/myplants')
+    res.redirect(`/myplants/${req.params.id}`)
   });
 });
-
 
 
 // route to index of plants app.get
