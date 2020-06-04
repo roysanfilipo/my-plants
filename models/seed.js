@@ -4,7 +4,7 @@ module.exports =
       name: 'aeonium kiwi',
       img: 'https://i.imgur.com/08flio8.jpg',
       days: 'Tuesday, Friday',
-      description: 'A very pretty Aeonium, award-winning 'Kiwi' is an evergreen succulent with small variegated rosettes, 3-5 in. across (7-12 cm), of fleshy, spoon-shaped leaves. ... Attractive when not blooming, this Aeonium is particularly striking when it produces bright golden racemes of small, star-shaped flowers in summer.',
+      description: 'A very pretty Aeonium, award-winning Kiwi is an evergreen succulent with small variegated rosettes, 3-5 in. across (7-12 cm), of fleshy, spoon-shaped leaves. ... Attractive when not blooming, this Aeonium is particularly striking when it produces bright golden racemes of small, star-shaped flowers in summer.',
       date: 'March 2015'
     }, {
       name: 'jade',

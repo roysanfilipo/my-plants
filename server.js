@@ -10,6 +10,7 @@ const db = mongoose.connection;
 require('dotenv').config()
 
 const Plants = require('./models/plants.js');
+const myPlants = require('./models/seed.js');
 
 //___________________
 //Port
@@ -70,13 +71,13 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/myplants', (req, res)=>{
-    // Plants.find({}, (error, allPlants) => {
+    Plants.find({}, (error, allPlants) => {
       res.render(
           'index.ejs',
-        // {
-        //     plants: allPlants
-        // });
-    // }
+        {
+            plants: allPlants
+        });
+    }
   );
 });
 
@@ -89,6 +90,14 @@ app.get('/myplants', (req, res)=>{
 
 // route that adds seed data (you only go to this page once to import it) app.get
 
+app.get('/seed', async (req, res) => {
+  try {
+    const seedItems = await Plants.create(myPlants)
+    res.send(seedItems)
+  } catch (err) {
+    res.send(err.message)
+  }
+});
 
 
 // route that allows you to delete each plant app.delete
