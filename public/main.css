@@ -1,12 +1,47 @@
+body {
+
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+nav {
+  font-family: 'Nixie One', cursive;
+  font-size: 25px;
+  padding: 5px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Nixie One', cursive;
+}
+
 .myplants {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 1px solid red;
+  justify-content: center;
 }
 
 .oneplant {
+  border: 1px solid #4a6349;
+  padding: 10px;
+  margin: 5px;
+}
 
+.plantname {
+  padding: 5px;
+  margin-left: 30px;
 }
 
 img {

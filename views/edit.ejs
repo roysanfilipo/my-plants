@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>my plants | update <%=plant.name %></title>
     <link rel="stylesheet" href="/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
   </head>
   <body>
+    <h1>update my <%=plant.name %></h1>
     <div class="container">
-      <h1>update my <%=plant.name %></h1>
       <form action="/myplants/<%=plant.id%>?_method=PUT" method="POST">
           name<br/> <input type="text" name="name" value="<%=plant.name%>" /><br/>
           image (URL)<br/> <input type="text" name="img" value="<%=plant.img%>" /><br/>
