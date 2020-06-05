@@ -124,14 +124,19 @@ app.get('/seed', async (req, res) => {
 
 
 // route that allows you to delete each plant app.delete
+app.delete('/myplants/:id', (req, res)=>{
+  Plants.findByIdAndRemove(req.params.id, (error, deletedPlant) => {
+    res.redirect('/myplants')
+  });
+});
+
+
+// add a new product Routes app.post
 app.post('/myplants', (req, res) => {
     Plants.create(req.body, (error, createdPlant) => {
         res.redirect(`/myplants/${req.params.id}`);
     })
 })
-
-// add a new product Routes app.post
-
 
 
 
