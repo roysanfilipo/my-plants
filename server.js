@@ -131,12 +131,14 @@ app.delete('/myplants/:id', (req, res)=>{
 });
 
 
-// add a new product Routes app.post
+// add a new plant Routes app.post
 app.post('/myplants', (req, res) => {
     Plants.create(req.body, (error, createdPlant) => {
-        res.redirect(`/myplants/${req.params.id}`);
+        res.redirect('/myplants');
     })
 })
+
+// /${req.params.id}
 
 
 

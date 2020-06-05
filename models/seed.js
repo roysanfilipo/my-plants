@@ -4,7 +4,7 @@ module.exports =
       name: 'aeonium kiwi',
       img: 'https://i.imgur.com/08flio8.jpg',
       days: 'Tuesday, Friday',
-      description: 'A very pretty Aeonium, award-winning Kiwi is an evergreen succulent with small variegated rosettes, 3-5 in. across (7-12 cm), of fleshy, spoon-shaped leaves. ... Attractive when not blooming, this Aeonium is particularly striking when it produces bright golden racemes of small, star-shaped flowers in summer.',
+      description: 'The Aeonium Kiwi is an evergreen succulent with small variegated rosettes, 3-5 in. across (7-12 cm), of fleshy, spoon-shaped leaves. Attractive when not blooming, this Aeonium is particularly striking when it produces bright golden racemes of small, star-shaped flowers in summer.',
       date: 'March 2015'
     }, {
       name: 'jade',
@@ -22,7 +22,21 @@ module.exports =
       name: 'fern',
       img: 'https://i.imgur.com/FS1IlPA.jpg',
       days: 'Friday',
-      description: 'Ferns are plants that do not have flowers. Ferns generally reproduce by producing spores. Similar to flowering plants, ferns have roots, stems and leaves. ... In the past, ferns had been loosely grouped with other spore-bearing vascular plants, often called “fern allies”.',
+      description: 'Ferns are plants that do not have flowers. Ferns generally reproduce by producing spores. Similar to flowering plants, ferns have roots, stems and leaves. In the past, ferns had been loosely grouped with other spore-bearing vascular plants, often called “fern allies”.',
       date: 'December 2016'
     }
   ]
+
+  // extra data for testing
+
+  // name: 'cereus ereus repandus',
+  // img: 'https://i.imgur.com/x8tQBX7.jpg',
+  // days: 'Sunday',
+  // description: 'Cereus repandus giromagi cactus succulents is a cultivar of the species “Cereus repandus”, the “Peruvian apple cactus”. It is a perennial plant, and it has the aspect of a columnar cactus, with its many erect stems which can reach the height of 10 meters. This plant show nocturnal, creamy-white flowers.',
+  // date: 'December 2016'
+  //
+  // name: 'african violet',
+  // img: 'https://i.imgur.com/swWcTIT.jpg',
+  // days: 'Friday',
+  // description: 'A perennial, herbaceous flowering plant more commonly kept as a houseplant, the African violet comes in a variety of shades of violet, although it can grow white in the wild. It has fleshy leaves with a fine, hair-like fur on them. ... It was given its common name because of its resemblance to a traditional violet.',
+  // date: 'May 2019'
