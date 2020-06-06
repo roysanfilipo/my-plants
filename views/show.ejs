@@ -13,27 +13,29 @@
       <div class="oneplantimg">
         <img src="<%=plant.img%>">
       </div>
-      <div class="oneplantdays">
-        day(s) you water them: <%=plant.days%>
-      </div>
-      <div class="oneplantdescription">
-        about your plant: <%=plant.description%>
-      </div>
-      <div class="oneplantdate">
-        when you planted them: <%=plant.date%>
-      </div>
-      <div class="navigate">
-        <div class="edit">
-          <a href="/myplants/<%= plant.id %>/edit">update my plant</a>
-        <div>
-        <div class="delete">
-          <form action="/myplants/<%=plant.id %>?_method=DELETE" method="POST">
-            <input type="submit" value="remove my plant"/>
-          </form>
+      <div class="oneplantinfo">
+        <div class="oneplantdays">
+          day(s) you water them:<br/> <%=plant.days%>
         </div>
-        <div class="backbutton">
-          <a href="/myplants">back to my plants collection</a>
+        <div class="oneplantdescription">
+          about your plant:<br/> <%=plant.description%>
         </div>
+        <div class="oneplantdate">
+          when you planted them:<br/> <%=plant.date%>
+        </div>
+        <div class="navigate">
+          <div class="edit">
+            <a href="/myplants/<%= plant.id %>/edit">update my plant</a>
+          </div>
+          <div class="backbutton">
+            <a href="/myplants">back to my plants collection</a>
+          </div>
+        </div>
+      </div>
+      <div class="delete">
+        <form action="/myplants/<%=plant.id %>?_method=DELETE" method="POST">
+          <input type="submit" value="remove my plant"/>
+        </form>
       </div>
     </div>
   </body>

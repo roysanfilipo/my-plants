@@ -44,6 +44,41 @@ nav {
   margin-left: 30px;
 }
 
+.oneplantshow {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #4a6349;
+}
+
+.oneplantimg {
+  margin: 5px;
+  padding: 5px;
+}
+
+.oneplantinfo {
+  flex-direction: column;
+  font-family: 'Nixie One', cursive;
+  margin: 10px;
+  padding: 10px;
+}
+
+.oneplantdays {
+  margin: 10px;
+}
+
+.oneplantdescription {
+  margin: 10px;
+}
+
+.oneplantdate {
+  margin: 10px;
+}
+
+.delete {
+  margin: 5px;
+  padding: 5px;
+}
+
 img {
   width: 300px;
 }
