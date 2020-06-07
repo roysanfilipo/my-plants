@@ -202,10 +202,15 @@ input[type="text"] {
   textarea {
     height: 300px;
     width: 400px;
-    max-width: 350px;
+    max-width: 500px;
     max-height: 400px;
     margin: 20px;
     font-size: 20px;
+  }
+
+  input[name="name"], input[name="img"], input[name="days"], input[name="date"] {
+    margin: 20px;
+    width: 400px;
   }
 
 }
