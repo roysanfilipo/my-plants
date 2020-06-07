@@ -1,4 +1,6 @@
 
+/* main css  */
+
 body {
   background-color: #eaf0ec;
 }
@@ -20,7 +22,7 @@ nav {
   margin-top: 5px;
 }
 
-img {
+.plantsimg img {
   width: 300px;
 }
 
@@ -58,6 +60,8 @@ h3 {
   margin-left: 30px;
 }
 
+/* show page css  */
+
 .oneplantshow {
   display: flex;
   flex-direction: row;
@@ -67,7 +71,10 @@ h3 {
 .oneplantimg {
   margin: 5px;
   padding: 5px;
-  width: 400px;
+}
+
+.oneplantimg img {
+  width: 475px;
 }
 
 .oneplantinfo {
@@ -92,4 +99,19 @@ h3 {
 .delete {
   margin: 5px;
   padding: 5px;
+}
+
+/* new and add pages */
+
+textarea {
+  height: 150px;
+  width: 300px;
+  max-width: 350px;
+  max-height: 250px;
+  margin: 20px;
+}
+
+input[name="name"], input[name="img"], input[name="days"], input[name="date"] {
+  margin: 20px;
+  width: 200px;
 }
