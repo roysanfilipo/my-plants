@@ -1,7 +1,7 @@
+
 body {
-
+  background-color: #eaf0ec;
 }
-
 h1 {
   font-family: 'Poiret One', cursive;
   font-size: 50px;
@@ -20,6 +20,10 @@ nav {
   margin-top: 5px;
 }
 
+img {
+  width: 300px;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -33,10 +37,20 @@ nav {
   justify-content: center;
 }
 
+h3 {
+  font-weight: 900;
+  font-size: 25px;
+}
+
 .oneplant {
   border: 1px solid #4a6349;
   padding: 10px;
   margin: 5px;
+}
+
+.oneplant:hover {
+  background-color: #9cb0a3;
+  color: white;
 }
 
 .plantname {
@@ -53,6 +67,7 @@ nav {
 .oneplantimg {
   margin: 5px;
   padding: 5px;
+  width: 400px;
 }
 
 .oneplantinfo {
@@ -77,8 +92,4 @@ nav {
 .delete {
   margin: 5px;
   padding: 5px;
-}
-
-img {
-  width: 300px;
 }
