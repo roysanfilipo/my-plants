@@ -38,5 +38,5 @@ module.exports =
   // name: 'african violet',
   // img: 'https://i.imgur.com/swWcTIT.jpg',
   // days: 'Friday',
-  // description: 'A perennial, herbaceous flowering plant more commonly kept as a houseplant, the African violet comes in a variety of shades of violet, although it can grow white in the wild. It has fleshy leaves with a fine, hair-like fur on them. ... It was given its common name because of its resemblance to a traditional violet.',
+  // description: 'A perennial, herbaceous flowering plant more commonly kept as a houseplant, the African violet comes in a variety of shades of violet, although it can grow white in the wild. It has fleshy leaves with a fine, hair-like fur on them. It was given its common name because of its resemblance to a traditional violet.',
   // date: 'May 2019'

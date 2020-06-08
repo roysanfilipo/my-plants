@@ -3,7 +3,7 @@
 //___________________
 
 const express = require('express');
-const methodOverride  = require('method-override');
+const methodOverride = require('method-override');
 const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
@@ -137,10 +137,6 @@ app.post('/myplants', (req, res) => {
         res.redirect('/myplants');
     })
 })
-
-// /${req.params.id}
-
-
 
 //___________________
 //Listener
