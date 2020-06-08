@@ -61,7 +61,7 @@ h3 {
   border: 1px solid #4a6349;
   padding: 10px;
   margin: 5px;
-  transition: 1s;
+  transition: 0.7s;
 }
 
 .oneplant:hover {
@@ -144,7 +144,6 @@ input[type="submit"] {
   padding: 10px;
   font-size: 15px;
   font-family: 'Nixie One', cursive;
-  transition: 1s;
 }
 
 input[type="submit"]:hover {
