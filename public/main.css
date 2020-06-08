@@ -3,7 +3,20 @@
 
 body {
   background-color: #eaf0ec;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 h1 {
   font-family: 'Poiret One', cursive;
   font-size: 50px;
@@ -48,6 +61,7 @@ h3 {
   border: 1px solid #4a6349;
   padding: 10px;
   margin: 5px;
+  transition: 1s;
 }
 
 .oneplant:hover {
@@ -129,7 +143,16 @@ form {
 input[type="submit"] {
   padding: 10px;
   font-size: 15px;
+  font-family: 'Nixie One', cursive;
+  transition: 1s;
 }
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #9cb0a3;
+  color: white;
+}
+
 input[type="text"] {
   font-size: 15px;
 }
