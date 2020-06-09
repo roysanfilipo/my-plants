@@ -14,7 +14,7 @@ MyPlants is a simple, easy to navigate browser based application that helps you 
 
 ### User Stories
 
-When you navigate to [MyPlants](https://my-glorious-plants.herokuapp.com/myplants) you are greeted by a page that displays 'my collection of plants' and a navigation link that says 'plant some seeds'.
+When you navigate to [MyPlants](https://my-glorious-plants.herokuapp.com/myplants), you are greeted by a page that displays 'my collection of plants' and a navigation link that says 'plant some seeds'.
 
 When you click on 'plant some seeds', you are taken to a page that allows you to add a new plant to your collection. You can include a name, image url, the days of the week that you intend to water them, a description of the plant, and the year/month that the plant was planted.
 
@@ -24,7 +24,7 @@ If you click on the image of the plant on the 'my collection of plants' page, yo
 
 
 ### Functionality
-This site was made with HTML, CSS, Javascript, Express, and Mongoose. It is stored with mongodb cloud and hosted on heroku.
+This site was made with HTML, CSS, Javascript, EJS, Express, and Mongoose. It is stored with mongodb cloud and hosted on heroku.
 
 The dependencies and routes can be found in the server.js file and express functions are used to implement each route that send and receive information between the index.ejs (myplants page), show.ejs (page displaying an individual plant), edit.ejs (page that allows you to edit a plant that has already been added), and new.ejs (page that allows you to add a new plant to your page) files.
 
