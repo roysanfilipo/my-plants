@@ -35,6 +35,11 @@ nav {
   margin-top: 5px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .plantsimg img {
   width: 300px;
 }
@@ -182,43 +187,53 @@ input[type="text"] {
   }
 
   .plantname {
-    font-size: 20px;
+    font-size: 30px;
   }
+
   .oneplantshow {
     display: flex;
     flex-direction: column;
     border: 1px solid #4a6349;
   }
+
   h3 {
     font-size: 45px;
   }
+
   .oneplantinfo {
     font-size: 25px;
   }
+
   .oneplantimg {
     text-align: center;
   }
+
   .oneplantimg img {
     width: 70%;
     margin-top: 5%;
   }
+
   .navigate {
     text-align: center;
   }
+
   .edit, .backbutton {
     padding: 10px;
     font-size: 30px;
   }
+
   form {
     text-align: center;
     font-size: 35px;
   }
+
   input[type="submit"] {
     padding: 10px;
     font-size: 25px;
   }
+
   input[type="text"] {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   textarea {
@@ -227,7 +242,7 @@ input[type="text"] {
     max-width: 500px;
     max-height: 400px;
     margin: 20px;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   input[name="name"], input[name="img"], input[name="days"], input[name="date"] {

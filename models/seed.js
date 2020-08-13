@@ -59,7 +59,7 @@ module.exports =
   // description: 'These mini orchids, also called "Moth Orchids," because their blooms give the appearance of moths' wings in flight, are easy to care for, grow very well indoors, and bloom during the winter and very often year round.',
   // date: 'January 2015'
 
-  // name: 'sanseveria fernwood,
+  // name: 'sanseveria fernwood',
   // img: 'https://i.imgur.com/CV7xF49.jpg',
   // days: 'Thursday',
   // description: 'Sansevieria Fernwood 'Mikado' is a new succulent with round, dark green leaves featuring light green mottling similar to the original Fernwood. As the narrow leaves mature, they arch outward slightly. Sansevierias are air cleaning plants that improve air quality in the home.',
